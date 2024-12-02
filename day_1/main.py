@@ -23,6 +23,7 @@ def solve_first_puzzle(data_path):
         total_diff += diff
     print(total_diff)
 
+
 def solve_second_puzzle(data_path):
     first_list, second_list = _load_data(data_path)
     total_product = 0
@@ -30,6 +31,7 @@ def solve_second_puzzle(data_path):
         frequency = second_list.count(first)
         total_product += first*frequency
     print(total_product)
+
 
 solve_first_puzzle(DATA_PATH)
 solve_second_puzzle(DATA_PATH)
